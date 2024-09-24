@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Báo Mới - Tin tức nóng nhất, tin tức mới nhất cập nhật liên tục 24H - BAOMOI.COM</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="https://baomoi-static.zadn.vn/favicons/favicon-32x32.png" sizes="32x32" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <div class="flex " style="width: 100%;;">
+                <a href="" class="company-logo">
+                    <img src="./images/bm-logo.png" alt="logo">
+                </a>
+                <div class="search-bar flex" style="padding-left: 10%;">
+                    <input type="text" class="news-input" id="search-text" placeholder="Nhập nội dung tìm kiếm">
+                    <button class="search-button" id="search-button">Search</button>
+                </div>
+            </div>
+            <div class="nav-links">
+                <ul class="flex">
+                    <button style="background-color: transparent; border: none; cursor: pointer; margin-left: 5px;">
+                        <img src="./images/ic-user.svg" style="height: 25px;">
+                    </button>
+                    <button style="background-color: transparent; border: none; cursor: pointer; margin-left: 5px;">
+                        <img src="./images/ic-lite.svg" style="height: 25px;">
+                    </button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <section class="main-content">
+            <div class="cards-container container flex" id="cardscontainer">
+        </section>
+        <aside class="sidebar">
+            <div id="sb_news_container" style="display: flex; flex-direction: column; margin-left: 20px;">
+
+            </div>
+        </aside>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">constGenius 02/02/2024</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem
+                    incidunt ratione, dolore beatae quaerat voluptatum autem fugit voluptas minima eligendi facere
+                    tenetur cumque. Dolorem porro, fugiat distinctio a accusamus cum!</p>
+            </div>
+        </div>
+    </template>
+    <template id="template-sb_item">
+        <div class="sidebar-item">
+            <img id="sb_img" src="./images/NewsWebsite.png" alt="Gov Info" class="sidebar-img">
+            <div style="align-items: start; flex-direction: column;">
+                <a id="sb_title" href="#" class="sidebar-title">Bảng thông tin chính phủ</a>
+                <div style="display: flex; flex-direction: row; align-items: center;">
+                    <img src="https://photo-baomoi.bmcdn.me/a1493a27e7640e3a5775.png" class="sider-item-publisher-image" >
+                    <p id="sb_time" class="sider-item-text" >5 giờ trước</p>
+                    <p id="sb_rel" class="sider-item-text" >15 liên quan</p>
+                </div>
+            </div>
+        </div>
+    </template>
+
+
+</body>
+
+</html>
